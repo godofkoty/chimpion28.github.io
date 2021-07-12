@@ -129,21 +129,21 @@ body {font-size:16px;}
   <div class="w3-container" id="packages" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+    <p>Some text our prices. If you would like to support our bank account consider buying a package.</p>
   </div>
 
   <div class="w3-row-padding">
     <div class="w3-half w3-margin-bottom">
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16">Floorplanning</li>
-        <li class="w3-padding-16">10 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">20% furniture discount</li>
-        <li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">Nothing</li>
+        <li class="w3-padding-16">Supports us</li>
+        <li class="w3-padding-16">Increases your coolness</li>
+        <li class="w3-padding-16">20% more coolness</li>
+        <li class="w3-padding-16">Very nice for us</li>
         <li class="w3-padding-16">
-          <h2>$ 199</h2>
-          <span class="w3-opacity">per room</span>
+          <h2>$ 1000</h2>
+          <span class="w3-opacity">per person</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
@@ -153,15 +153,15 @@ body {font-size:16px;}
         
     <div class="w3-half">
       <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
-        <li class="w3-padding-16">Floorplanning</li>
-        <li class="w3-padding-16">50 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">50% furniture discount</li>
-        <li class="w3-padding-16">GREAT deals</li>
+        <li class="w3-red w3-xlarge w3-padding-32">Extreme</li>
+        <li class="w3-padding-16">Nothing</li>
+        <li class="w3-padding-16">Supports us</li>
+        <li class="w3-padding-16">Increases your coolness</li>
+        <li class="w3-padding-16">50% more coolness</li>
+        <li class="w3-padding-16">Extreamly nice for us</li>
         <li class="w3-padding-16">
-          <h2>$ 249</h2>
-          <span class="w3-opacity">per room</span>
+          <h2>$ 1000000</h2>
+          <span class="w3-opacity">per person</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
@@ -174,7 +174,7 @@ body {font-size:16px;}
   <div class="w3-container" id="contact" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <p>Do you want to know more? Contact us!</p>
     <form action="/action_page.php" target="_blank">
       <div class="w3-section">
         <label>Name</label>
@@ -188,7 +188,7 @@ body {font-size:16px;}
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="send_message('Contacted')">Send Message</button>
     </form>  
   </div>
 
@@ -216,6 +216,9 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+}
+function send_message(Message){
+    window.alert(Message);
 }
 </script>
 
